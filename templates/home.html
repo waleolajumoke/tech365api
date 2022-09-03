@@ -1,0 +1,16 @@
+
+
+<h3>Products</h3>
+
+    <div style="display: flex">
+        {% for i in info  %}
+        <div style="width:30%; margin: 20px">
+            <img src="{{i.photo}}" alt="">
+            <h3>{{i.name}}</h3>
+            <h2>{{i.price}}</h2>
+            <button>Buy Now</button>
+        </div>
+        {% endfor %}
+    </div>
+
+    
